@@ -1,0 +1,13 @@
+// C++ code
+//moisture value read
+int sensor=A0;
+void setup()
+{
+Serial.begin(9600);  
+}
+
+void loop()
+{
+int moisture=analogRead(sensor); 
+ Serial.println(moisture);
+}
